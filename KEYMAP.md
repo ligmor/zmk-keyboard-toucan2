@@ -115,10 +115,11 @@ soltar el pulgar derecho.
 
 ## Notas
 
-- `config/toucan.keymap` y `boards/shields/toucan/toucan.keymap` deben ser
-  siempre idénticos — el primero es el que usa el build real (CI/`west
-  build`), el segundo es el default del shield si alguien lo compila
-  standalone.
+- El único keymap del proyecto es `config/toucan.keymap` — es el que usa el
+  build real (CI/`west build`). Se eliminó la copia default del shield
+  (`boards/shields/toucan/toucan.keymap`) para no tener que mantener dos
+  archivos sincronizados; si alguien más usa el shield "toucan" como módulo
+  standalone sin su propio `config/`, tendrá que aportar su propio keymap.
 - Si agregas/quitas una capa, revisa `toucan.dtsi` — hay referencias a
   índices de capa "a mano" (como el `&mo N` que quedó deshabilitado en
   `is_touching_processor`) que no se actualizan solas.

@@ -110,12 +110,18 @@
             track-remainders;
         };
 
+        // NOTE: previously bound to `&mo <layer>` to auto-activate a mouse-click
+        // layer on touch, but the current keymap (36-key/home-row-mods) has no
+        // dedicated mouse layer — layer 4 there is `ext` (F-keys + bootloader/
+        // sys_reset), so auto-activating it on every trackpad touch would expose
+        // bootloader/reset just by resting a finger on the pad. Left as a no-op
+        // until a real mouse layer exists; add it back to `bindings` below then.
         is_touching_processor:is_touching_processor {
             compatible = "zmk,input-processor-behaviors";
             #input-processor-cells = <0>;
 
             codes = <INPUT_BTN_TOUCH>;      // watch for the 'touch' pseudo button
-            bindings  = <&mo 4>;            // Activate Layer 4 while held &mo 4
+            bindings  = <&none>;
         };
 
         swipe_button_mapper: swipe_button_mapper {

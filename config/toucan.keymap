@@ -14,9 +14,9 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <140>;
+            require-prior-idle-ms = <120>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -48,7 +48,7 @@
                 &none &kp Q      &kp W      &kp E       &kp R       &kp T   &kp Y &kp U       &kp I       &kp O      &kp P         &none
                 &none &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G   &kp H &hm RCTRL J &hm RSHFT K &hm LALT L &hm RGUI SEMI &none
                 &none &kp Z      &kp X      &kp C       &kp V       &kp B   &kp N &kp M       &kp COMMA   &kp DOT    &kp FSLH      &none
-                                &lt 3 ENTER  &lt 2 TAB    &kp SPACE      &kp BSPC     &lt 1 ESCAPE &lmc 4 RCLK
+                                &lt 3 TAB  &lt 2 ESCAPE   &kp SPACE      &kp BSPC     &lt 1 ENTER &lmc 4 RCLK
             >;
         };
 

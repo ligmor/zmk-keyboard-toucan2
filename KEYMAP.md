@@ -21,7 +21,7 @@ están apagadas con `&none`).
 
 | Nombre | Tipo | Qué hace | Config |
 | --- | --- | --- | --- |
-| `hm` (home row mods) | hold-tap | Tap = letra normal. Hold = modificador (GUI/Alt/Ctrl/Shift) | `tapping-term-ms = 280`, `quick-tap-ms = 175`, `require-prior-idle-ms = 150`, flavor `balanced` |
+| `hm` (home row mods) | hold-tap | Tap = letra normal. Hold = modificador (GUI/Alt/Ctrl/Shift) | `tapping-term-ms = 180`, `quick-tap-ms = 140`, `require-prior-idle-ms = 120`, flavor `balanced` |
 | `lt N KEY` (layer-tap, built-in ZMK) | hold-tap | Tap = `KEY`. Hold = activa capa `N` mientras la mantengas | — |
 | `lmc N KEY` (layer_mouseclick) | hold-tap | Tap = click de mouse (`KEY`, ej. `RCLK`). Hold = activa capa `N` | `tapping-term-ms = 200`, flavor `tap-preferred` |
 
@@ -36,16 +36,16 @@ Ctrl/Shift/Alt combinados con otra tecla se sientan instantáneos).
  —    Q     W     E     R     T   |   Y     U     I     O     P     —
  —  A/GUI  S/Alt D/Ctrl F/Shift G  |   H  J/Shift K/Ctrl L/Alt ;/GUI  —
  —    Z     X     C     V     B   |   N     M     ,     .     /     —
-         ENTER/L3  TAB/NAV  SPACE  |  BSPC  ESC/SYM  RCLK/L4(ext)
+          TAB/L3   ESC/SYM  SPACE  |  BSPC  ENTER/NAV  RCLK/L4(ext)
 ```
 
 - `A/GUI` = tocar da `A`, mantener da `GUI` izquierdo. Igual para el resto de
   home row mods (S/Alt, D/Ctrl, F/Shift a la izquierda; J/Shift, K/Ctrl,
   L/Alt, ;/GUI a la derecha).
-- Pulgar izq., tecla central = mantener para `NAV` (capa 1), tap = `TAB`.
-- Pulgar der., tecla central = mantener para `SYM` (capa 2), tap = `ESC`.
+- Pulgar izq., tecla central = mantener para `SYM` (capa 2), tap = `ESC`.
+- Pulgar der., tecla central = mantener para `NAV` (capa 1), tap = `ENTER`.
 - Pulgar izq., tecla externa (la más alejada del centro) = mantener para
-  `ADJ` (capa 3), tap = `ENTER`.
+  `ADJ` (capa 3), tap = `TAB`.
 - Pulgar der., tecla externa = mantener para `EXT` (capa 4), tap = click
   derecho del mouse (`RCLK`).
 - Las teclas internas (más cerca del centro del teclado) son `SPACE`

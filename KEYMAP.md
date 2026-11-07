@@ -4,7 +4,7 @@
 
 | Q | W | E | R | T | Y | U | I | O | P |
 |---|---|---|---|---|---|---|---|---|---|
-| A/GUI | S/Alt | D/Ctrl | F/Shift | G |  H | J/Shift | K/Ctrl | L/Alt | ;/GUI |
+| A/GUI | S/Alt | D/Shift | F/Ctrl | G |  H | J/Ctrl | K/Shift | L/Alt | ;/GUI |
 | Z | X | C | V | B |  N | M | , | . | / |
 |  |  | TAB/ADJ |ESC/SYM | SPACE |  BSPC | ENTER/NAV | DEL/EXT | | |
 
@@ -13,8 +13,10 @@
 | — | — | — | — | — | — | — | — | — | — | — |
 |---|---|---|---|---|---|---|---|---|---|---|
 | BT0 | BT1 | BT2 | BT3 | BT4 | — | ← | ↓ | ↑ | → | — |
-| BT_CLR | — | — | — | — | — | HOME | PgDn | PgUp | END | — |
+| BT_CLR | Studio unlock | — | — | — | — | HOME | PgDn | PgUp | END | — |
 |  |  | — | — | — | — | — | — | — | | |
+
+> Mantener NAV + SYM a la vez activa la capa ADJ (tri-layer).
 
 ## SYM
 

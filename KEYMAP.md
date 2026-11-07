@@ -8,6 +8,8 @@
 | Z | X | C | V | B |  N | M | , | . | / |
 |  |  | TAB/Shift |ESC/SYM | SPACE |  BSPC | ENTER/NAV | DEL/Shift | | |
 
+> Los modificadores de la home row solo se activan si la otra tecla es de la mano contraria (o un pulgar). SYM y NAV se activan en cuanto pulsas y sueltas otra tecla.
+
 ## NAV
 
 | — | — | — | — | — | — | — | — | — | — | — |

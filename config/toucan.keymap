@@ -11,14 +11,41 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
+        // Home-row mods: a hold only triggers when the other key is on the
+        // opposite hand (or a thumb). Same-hand rolls resolve as plain taps.
+        hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <140>;
             require-prior-idle-ms = <120>;
             flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>;
             bindings = <&kp>, <&kp>;
+        };
+
+        hmr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <140>;
+            require-prior-idle-ms = <120>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        // Layer-tap that activates the layer as soon as another key is
+        // pressed and released, instead of waiting for the full term.
+        ltb: layer_tap_balanced {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <140>;
+            flavor = "balanced";
+            bindings = <&mo>, <&kp>;
         };
 
         ts: thumb_shift {
@@ -45,9 +72,9 @@
             display-name = "BASE";
             bindings = <
                 &none &kp Q      &kp W      &kp E       &kp R       &kp T   &kp Y &kp U       &kp I       &kp O      &kp P         &none
-                &none &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G   &kp H &hm RCTRL J &hm RSHFT K &hm LALT L &hm RGUI SEMI &none
+                &none &hml LGUI A &hml LALT S &hml LSHFT D &hml LCTRL F &kp G   &kp H &hmr RCTRL J &hmr RSHFT K &hmr LALT L &hmr RGUI SEMI &none
                 &none &kp Z      &kp X      &kp C       &kp V       &kp B   &kp N &kp M       &kp COMMA   &kp DOT    &kp FSLH      &none
-                                &ts LSHFT TAB  &lt 2 ESCAPE   &kp SPACE      &kp BSPC     &lt 1 ENTER &ts RSHFT DEL
+                                &ts LSHFT TAB  &ltb 2 ESCAPE   &kp SPACE      &kp BSPC     &ltb 1 ENTER &ts RSHFT DEL
             >;
         };
 

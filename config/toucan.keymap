@@ -122,9 +122,9 @@
         lol {
             display-name = "LOL";
             bindings = <
-                &kp TAB    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp P &kp Y &none &none
-                &kp LSHIFT &kp Q  &kp W  &kp E  &kp R  &kp T    &none  &none  &none &none &none &none
-                &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G    &none  &none  &none &none &none &none
+                &none &kp TAB    &kp N1 &kp N2 &kp N3 &kp N4   &kp N5 &kp N6 &kp N7 &kp P &kp Y &none
+                &none &kp LSHIFT &kp Q  &kp W  &kp E  &kp R    &none  &none  &none  &none &none &none
+                &none &kp LCTRL  &kp A  &kp S  &kp D  &kp F    &none  &none  &none  &none &none &none
                                 &kp LALT &kp SPACE &kp B   &kp ENTER &kp ESCAPE &to BASE
             >;
         };

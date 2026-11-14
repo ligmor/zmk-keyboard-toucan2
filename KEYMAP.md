@@ -56,7 +56,7 @@ Capa de juego sin hold-taps. Se activa desde ADJ y se sale con la tecla del extr
 |---|---|---|---|---|---|---|---|---|---|
 | Shift | Q | W | E | R | — | — | — | — | — |
 | Ctrl | A | S | D | F | — | — | — | — | — |
-|  |  | Alt | Space | B | Enter | Esc | BASE | | |
+|  |  | B | Alt | Space | Enter | Esc | BASE | | |
 
 ## Trackpad
 

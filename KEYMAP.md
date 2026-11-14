@@ -38,6 +38,8 @@ Se activa manteniendo SYM y pulsando la tecla NAV (posición de ENTER).
 | BT0 | BT1 | BT2 | BT3 | BT4 | BT_CLR | — | — | — | — | — |
 |  |  | — | — | — | — | — | — | — | | |
 
+En la fila superior, la tecla de más a la derecha activa la capa **LOL** (`&to LOL`).
+
 ## EXT
 
 | F1 | F2 | F3 | F4 | F5 | — | ⏯ | ⏮ | ⏭ | Vol- | Vol+ |
@@ -45,6 +47,16 @@ Se activa manteniendo SYM y pulsando la tecla NAV (posición de ENTER).
 | F6 | F7 | F8 | F9 | F10 | — | Bri- | Bri+ | PrtSc | Mute | boot |
 | F11 | F12 | boot | reset | — | — | — | — | — | — | reset |
 |  |  | — | — | — | — | — | — | — | | |
+
+## LOL
+
+Capa de juego sin hold-taps. Se activa desde ADJ y se sale con la tecla del extremo del pulgar derecho (`&to BASE`).
+
+| Tab | 1 | 2 | 3 | 4 | 5 | 6 | 7 | P | Y | — | — |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Shift | Q | W | E | R | T | — | — | — | — | — | — |
+| Ctrl | A | S | D | F | G | — | — | — | — | — | — |
+| | | Alt | Space | B | Enter | Esc | BASE | | | | |
 
 ## Trackpad
 
